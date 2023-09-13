@@ -1,0 +1,29 @@
+What is npm?
+npm does not stands for node package manager(It is everything but node package manager)
+npm manages the packages
+
+package.json is configuration for npm
+
+
+Bundler r is the most important package in package.json(Webpack, parcel,vite) it bundles our app so that we can ship it to production.
+
+
+Episode 2 notes 
+===============
+There are two types of depencies 
+Normal dependencies : used in Production (cmd :npm install)
+devDepencies : used only for development purpose (Cmd :npm install -D)
+
+package "^2.8.3": parcel will automatically update the version(minor upgrade)
+package "~2.8.3": parcel will automatically update the version to major upgrade(major upgrade)
+
+
+package-lock.json
+Keeps record of every exact version of packages 
+
+node-modules :It contains the code of all the packages the we installed
+
+Transitive dependencies:  dependencies can depend on other depencies and those  other dependencies can be dependend on other dependencies.
+that is why there are alot of dependencies/packages  in node-modules .
+
+npx is used to execute the package e.g npx parcel index.html 
