@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "This is my React Repo by Muhammad Abdullah",
   "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "repository": {
@@ -14,7 +16,7 @@
     "ReactJs"
   ],
   "author": "Muhammad Abdullah",
-  "license": "ISC",
+  "license": "ISC", 
   "bugs": {
     "url": "https://github.com/MuhammadAbdullah101/my-react-repo/issues"
   },

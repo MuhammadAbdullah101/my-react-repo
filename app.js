@@ -1,13 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from "react";
+import ReactDOM from "react-dom/client";
 
+// React.createElement => object =>HTMLElement
+// const heading = React.createElement("h1", {}, "Helloworld");
 
-const divWith2h1 = React.createElement(
-  "div",
-  { id: "MyDiv" },
-  [React.createElement("h1", { id: "heading" }, "Hello"),
-  React.createElement("h2", { id: "heading2" }, "Abdullah This is React")
-  ]);
-const root = ReactDOM.createRoot(document.getElementById("root"));
+//JSX - is not Html in JS ==> its React.createElement object in the end
+//JSX ==> Babel transpiles it into React.CreateElement  ==> ReactElement-js Object ==> HTMLElement(render)
 
-root.render(divWith2h1);
+const heading = <h1>Hello World from JSX</h1>
+
+//React Functional Component
+const HeadingComponent = () =>{
+    return <h1>Hello world from Functional Component</h1>;
+}
+
+const parent = document.getElementById("root");
+
+const root = ReactDOM.createRoot(parent);
+root.render(<HeadingComponent />);

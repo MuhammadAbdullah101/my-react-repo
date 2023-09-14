@@ -27,3 +27,22 @@ Transitive dependencies:  dependencies can depend on other depencies and those  
 that is why there are alot of dependencies/packages  in node-modules .
 
 npx is used to execute the package e.g npx parcel index.html 
+
+Episode 3 notes  
+===============
+ReactDom.createRoot convert React.creatElement Object into actual html element
+
+jSX: Syntax to createReactElement in easy way. (Html-like)
+e.g React.createElement("h1", {}, "Hello world"); ==> <h1>Hello World </h1>
+JSX (transpiled before it reached JS engin in browsers)
+Browsers don't understand JSX (Babel converts JSX code to valid Pure JS code that browser understands)
+
+Babel: Its is JS compiler AKA transpiler
+      (converts Jsx to browser undertandable code)
+
+React Component:
+There are two type of components
+1: class based components (Old way of writing React component) not used anymore
+2: Functional Component (New  way of writing React component) 99.99% dev used 
+    FunctionalComponent is just a JS fucntion which returns some piece of JSX
+
