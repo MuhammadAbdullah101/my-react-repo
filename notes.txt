@@ -46,3 +46,22 @@ There are two type of components
 2: Functional Component (New  way of writing React component) 99.99% dev used 
     FunctionalComponent is just a JS fucntion which returns some piece of JSX
 
+Episode 4 notes  
+===============
+
+config driven UI
+
+we gave config(Data)  we get data for specific UI 
+lets say showing offers on some products based on location/city etc
+
+Keys in map() are very important for react to
+render  items efficiently.
+if we dont use key , react will re-render all the items 
+for new item.
+
+Keys play important role in performance & optimization
+
+index as key are not recommended by React
+because the order of items might change and for new Item 
+it will agarin re-renders all the items
+as react will consider it as like other items
